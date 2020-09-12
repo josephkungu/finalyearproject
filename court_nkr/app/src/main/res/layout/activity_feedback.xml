@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".activities.Feedback">
+
+
+    <EditText
+        android:id="@+id/textarea"
+        android:layout_width="343dp"
+        android:layout_height="256dp"
+        android:layout_margin="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="monospace"
+        android:gravity="center"
+
+        android:inputType="text|textMultiLine"
+        android:textColor="#448AFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textarea"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/button_background"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textarea"
+        android:layout_marginLeft="180dp"
+        android:background="@drawable/button_background"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit"
+        android:layout_margin="25sp"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/black"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textStyle="italic" />
+
+</RelativeLayout>

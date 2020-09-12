@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="#154F37"
+    tools:context=".activities.Homepage">
+
+    <LinearLayout
+        android:id="@+id/layout_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="#048726"
+            android:drawableRight="@drawable/ic_search"
+            android:text="SEARCH CASE"
+            android:textAlignment="center"
+            android:textColor="#FFFF00"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:background="#048726"
+            android:text="FEEDBACK"
+            android:textAlignment="center"
+            android:textColor="#FFFF00"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_one"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/layout_one"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/gstaticts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_one"
+        android:fontFamily="monospace"
+        android:text="GENERAL STATISTICS"
+        android:textAlignment="center"
+        android:textColor="#FFFF00" />
+
+    <LinearLayout
+        android:id="@+id/section_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gstaticts"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="#B50101"
+            android:elevation="4dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/in_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Total cases"
+                android:textAlignment="center"
+                android:textColor="#B50101"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif"
+                android:text="2589"
+                android:textAlignment="center"
+                android:textColor="#012EB5"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="#B50101"
+            android:elevation="4dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/in_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Pending cases"
+                android:textAlignment="center"
+                android:textColor="#B50101"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif"
+                android:text="1586"
+                android:textAlignment="center"
+                android:textColor="#012EB5"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="#B50101"
+            android:elevation="4dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/in_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Resolved cases"
+                android:textAlignment="center"
+                android:textColor="#B50101"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif"
+                android:text="1003"
+                android:textAlignment="center"
+                android:textColor="#012EB5"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_two"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/section_one"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/agescase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_two"
+        android:fontFamily="monospace"
+        android:text="CASES PENDING BY AGE"
+        android:textAlignment="center"
+        android:textColor="#FFFF00" />
+
+    <LinearLayout
+        android:id="@+id/section_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/agescase"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="#B50101"
+            android:elevation="4dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/intwo_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="0 - 1YRS"
+                android:textAlignment="center"
+                android:textColor="#B50101"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif"
+                android:text="150"
+                android:textAlignment="center"
+                android:textColor="#012EB5"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="#B50101"
+            android:elevation="4dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/intwo_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="1 - 3YRS"
+                android:textAlignment="center"
+                android:textColor="#B50101"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif"
+                android:text="120"
+                android:textAlignment="center"
+                android:textColor="#012EB5"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="#B50101"
+            android:elevation="4dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/intwo_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="3 - 5YRS"
+                android:textAlignment="center"
+                android:textColor="#B50101"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif"
+                android:text="105"
+                android:textAlignment="center"
+                android:textColor="#012EB5"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_three"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/section_two"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/matters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_three"
+        android:layout_marginTop="20sp"
+        android:fontFamily="monospace"
+        android:text="MATTERS COMING TO COURT"
+        android:textAlignment="center"
+        android:textColor="#FFFF00" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/matters"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:layout_marginTop="25dp"
+
+            android:gravity="center">
+
+            <TableRow>
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="3dip"
+                    android:text="NUMBER"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="3dip"
+                    android:text="ACTIVITY"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="3dip"
+                    android:text="COUNT"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF00" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="3dip"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="3dip"
+                    android:text="Mention"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="3dip"
+                    android:text="26"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF00" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="3dip"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="3dip"
+                    android:text="Hearing"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="3dip"
+                    android:text="17"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF00" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="3dip"
+                    android:text="3"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="3dip"
+                    android:text="Sentence"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:fontFamily="monospace"
+                    android:padding="3dip"
+                    android:text="6"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF00" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</RelativeLayout>
